@@ -7,4 +7,5 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('about'); // run app/routes/about.js when user navigates to /about
 });
