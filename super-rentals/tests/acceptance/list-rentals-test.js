@@ -35,7 +35,11 @@ module('Acceptance | list rentals', function(hooks) {
     assert.equal(currentURL(), '/contact', 'should navigate to contact');
   });
 
-  test('should list available rentals', async function(assert) { });
+  test('should list available rentals', async function(assert) {
+    await visit('/');
+    // querySelectorAll method returns the elements that match the given CSS selector.
+    assert.equal(this.element.querySelectorAll('.listing').length, 3, 'should display 3 listings');
+  });
 
   test('should filter the list of rentals by city', async function(assert) { });
 
