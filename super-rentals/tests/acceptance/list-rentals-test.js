@@ -1,5 +1,6 @@
 import { module, test } from 'qunit';
 import { setupApplicationTest } from 'ember-qunit';
+import setupMirage from 'ember-cli-mirage/test-support/setup-mirage';
 import {
   click, // pretends to be a user clicking on a specific part of the screen
   currentURL, // returns the URL of the page we are currently on
@@ -8,13 +9,7 @@ import {
 
 module('Acceptance | list rentals', function(hooks) {
   setupApplicationTest(hooks);
-
-  // basic test to check that application is running by verifying the root url is reachable
-  // test('visiting /', async function(assert) {
-  //   await visit('/');
-  //
-  //   assert.equal(currentURL(), '/');
-  // });
+  setupMirage(hooks);
 
   // start by entering application goals as tests and build code to make them succeed
   test('should show rentals as the home page', async function(assert) {
