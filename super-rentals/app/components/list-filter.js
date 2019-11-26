@@ -20,7 +20,7 @@ export default Component.extend({
 
       filterAction(filterInputValue).then((response) => {
         if (response.query === this.value) {
-          this.set('results', response.results)); // only use results if the response is for the same query we have in the input value
+          this.set('results', response.results); // only use results if the response is for the same query we have in the input value
         }
       });
     }
