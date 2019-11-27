@@ -1,14 +1,23 @@
+import Service from '@ember/service';
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render, click } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 import EmberObject from '@ember/object';
 
+let StubMapsService = Service.extend({
+  getMapElement() {
+    return Promise.resolve(document.createElement('div'));
+  }
+});
+
+
 module('Integration | Component | rental-listing', function(hooks) {
   setupRenderingTest(hooks);
 
   // create a test object with the expected properties of a rental
   hooks.beforeEach(function() {
+    this.owner.register('service:map-element', StubMapsService);
     this.rental = EmberObject.create({
       image: 'fake.png',
       title: 'test-title',
