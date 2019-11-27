@@ -23,6 +23,12 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['ember-simple-leaflet-maps'] = {
+    url: process.env.LEAFLET_MAPS_URL || 'https://unpkg.com',
+    version: process.env.LEAFLET_MAPS_VERSION || '1.3.4',
+    apiKey: process.env.LEAFLET_MAPS_API_KEY || 'pk.eyJ1IjoiYml0bG9naWMiLCJhIjoiY2szZmZlZndqMDI2ODNsbzR0cW85cGhlMiJ9.kXqr7VSiwm26EvjEFC2roQ'
+  }
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
