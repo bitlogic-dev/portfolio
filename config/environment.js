@@ -51,7 +51,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    ENV.rootURL = 'https://bitlogic-dev.github.io/super-rentals-app/'
+    ENV.rootURL = 'https://bitlogic-dev.github.io/'
   }
 
   return ENV;
