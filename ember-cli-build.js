@@ -6,8 +6,7 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
     fingerprint: {
-      exclude: ['assets'],
-      prepend: 'https://bitlogic-dev.github.io/super-rentals-app'
+      enabled: false
     }
   });
 
