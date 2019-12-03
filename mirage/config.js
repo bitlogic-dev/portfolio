@@ -1,6 +1,6 @@
 export default function() {
   this.passthrough('https://api.mapbox.com/**');
-  this.namespace = 'super-rentals/api';
+  this.namespace = '/super-rentals/api';
 
   let rentals = [{
       type: 'rentals',
