@@ -51,8 +51,6 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    // ENV.modulePrefix = 'super-rentals-app';
-    // ENV.rootURL = 'super-rentals-app/';
   }
 
   return ENV;
