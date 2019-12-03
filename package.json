@@ -1,10 +1,11 @@
 {
-  "name": "super-rentals",
+  "name": "super-rentals-app",
   "version": "0.0.0",
   "private": true,
   "description": "Small description for super-rentals goes here",
   "repository": "",
   "license": "MIT",
+  "homepage": "https://bitlogic-dev.github.io/super-rentals-app",
   "author": "",
   "directories": {
     "doc": "doc",
