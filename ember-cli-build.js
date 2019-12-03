@@ -5,9 +5,10 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
-    // fingerprint: {
-    //   enabled: false
-    // }
+    fingerprint: {
+      exclude: ['assets'],
+      prepend: 'https://bitlogic-dev.github.io/super-rentals/'
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
