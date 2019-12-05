@@ -1,6 +1,7 @@
 export default function() {
   this.passthrough('https://api.mapbox.com/**');
-  this.namespace = '/super-rentals/api';
+  this.urlPrefix = 'https://bitlogic-dev.github.io'
+  this.namespace = '/api';
 
   let rentals = [{
       type: 'rentals',
