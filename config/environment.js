@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'super-rentals',
+    modulePrefix: 'portfolio',
     environment,
     rootURL: '/',
     locationType: 'auto',
@@ -51,7 +51,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    ENV.rootURL = 'super-rentals';
+    ENV.rootURL = 'portfolio';
     ENV['ember-cli-mirage'] = {
       enabled: true
     };

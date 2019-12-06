@@ -1,6 +1,7 @@
 export default function() {
   this.passthrough('https://api.mapbox.com/**');
-  this.urlPrefix = 'https://bitlogic-dev.github.io'
+  // must apply this urlPrefix if deploying to gh-pages
+  //this.urlPrefix = 'https://bitlogic-dev.github.io'
   this.namespace = '/api';
 
   let rentals = [{

@@ -31,7 +31,7 @@ module('Acceptance | list rentals', function(hooks) {
     assert.equal(currentURL(), '/rentals', 'should redirect automatically');
   });
 
-  test('should link to information about the company', async function(assert) {
+  test('should link to information about me', async function(assert) {
     await visit('/');
     await click(".menu-about");
     assert.equal(currentURL(), '/about', 'should navigate to about');
