@@ -1,14 +1,13 @@
 <article class="listing">
   <div>
-    <h3>Project Screenshot</h3>
-    <p>
-      Put an image of project application and run application on click.
-    </p>
+    <a href={{this.project.url}} target=#>
+      <img src={{this.project.image}} alt="">
+    </a>
   </div>
   <div class="details">
-    <h3>{{this.project}}</h3>
+    <h3>{{this.project.title}}</h3>
     <p>
-      Description of application.
+      {{this.project.description}}
     </p>
   </div>
 </article>

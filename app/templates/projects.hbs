@@ -4,9 +4,13 @@
   <p>
     I hope you enjoy these projects and have fun while you're here.
   </p>
-  <ProjectItem @project="Sample Project"></ProjectItem>
   {{#link-to "about" class="button"}}
     About Us
   {{/link-to}}
 </div>
+
+{{#each this.model as |project|}}
+  <ProjectItem @project={{project}}></ProjectItem>
+{{/each}}
+
 {{outlet}}
