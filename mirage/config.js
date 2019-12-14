@@ -16,7 +16,7 @@ export default function() {
   {
     title: 'Tic Tac Toe',
     category: 'game',
-    image: '/assets/images/tic-tac-toe.png',
+    image: '/portfolio/assets/images/tic-tac-toe.png',
     url: 'https://bitlogic-dev.github.io/FCC-Tic-Tac-Toe/',
     description: 'Play against the negamax algorithm.'
   }];
