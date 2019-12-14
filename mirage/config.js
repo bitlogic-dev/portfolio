@@ -21,7 +21,7 @@ export default function() {
     description: 'Play against the negamax algorithm.'
   }];
 
-  this.get('/projects', function(db, request) {
+  this.get('/projects', function() {
     return { data: projects }
   });
 
