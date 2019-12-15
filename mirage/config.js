@@ -1,6 +1,4 @@
 export default function() {
-  this.passthrough('https://api.mapbox.com/**');
-
   // the namespace property lets Mirage know to only provide data for url request that start with api
   this.namespace = '/api';
 
@@ -27,7 +25,7 @@ export default function() {
     }
   }];
 
-  this.get('/projects', function(db, request) {
+  this.get('/projects', function() {
     return { data: projects };
   });
 }
