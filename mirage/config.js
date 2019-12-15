@@ -1,7 +1,5 @@
 export default function() {
   this.passthrough('https://api.mapbox.com/**');
-  // must apply this urlPrefix if deploying to gh-pages
-  //this.urlPrefix = 'https://bitlogic-dev.github.io'
 
   // the namespace property lets Mirage know to only provide data for url request that start with api
   this.namespace = '/api';
@@ -12,7 +10,7 @@ export default function() {
     attributes: {
       title: 'Simon',
       category: 'game',
-      image: 'https://bitlogic-dev.github.io/portfolio/assets/images/simon.png',
+      image: '/portfolio/assets/images/simon.png',
       url: 'https://bitlogic-dev.github.io/FCC-Simon/',
       description: 'Memory game.'
     }
@@ -23,7 +21,7 @@ export default function() {
     attributes: {
       title: 'Tic Tac Toe',
       category: 'game',
-      image: 'https://bitlogic-dev.github.io/portfolio/assets/images/tic-tac-toe.png',
+      image: '/portfolio/assets/images/tic-tac-toe.png',
       url: 'https://bitlogic-dev.github.io/FCC-Tic-Tac-Toe/',
       description: 'Play against the negamax algorithm.'
     }
