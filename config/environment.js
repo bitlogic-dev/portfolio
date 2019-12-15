@@ -51,7 +51,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    ENV.rootURL = 'portfolio';
+    //ENV.rootURL = 'portfolio';
     ENV.baseURL = '/portfolio'
     ENV['ember-cli-mirage'] = {
       enabled: true
