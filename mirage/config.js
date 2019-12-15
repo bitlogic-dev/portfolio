@@ -12,7 +12,7 @@ export default function() {
     attributes: {
       title: 'Simon',
       category: 'game',
-      image: '/assets/images/simon.png',
+      image: 'assets/images/simon.png',
       url: 'https://bitlogic-dev.github.io/FCC-Simon/',
       description: 'Memory game.'
     }
@@ -23,7 +23,7 @@ export default function() {
     attributes: {
       title: 'Tic Tac Toe',
       category: 'game',
-      image: '/assets/images/tic-tac-toe.png',
+      image: 'assets/images/tic-tac-toe.png',
       url: 'https://bitlogic-dev.github.io/FCC-Tic-Tac-Toe/',
       description: 'Play against the negamax algorithm.'
     }
