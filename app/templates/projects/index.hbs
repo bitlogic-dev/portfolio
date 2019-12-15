@@ -1,4 +1,6 @@
-{{#each this.model as |project|}}
-  <ProjectItem @project={{project}}></ProjectItem>
-{{/each}}
+<ul class="results">
+  {{#each this.model as |projectUnit|}}
+    <li><ProjectItem @project={{projectUnit}}></ProjectItem></li>
+  {{/each}}
+</ul>
 {{outlet}}

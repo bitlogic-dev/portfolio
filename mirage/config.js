@@ -7,22 +7,30 @@ export default function() {
   this.namespace = '/api';
 
   let projects = [{
-    title: 'Simon',
-    category: 'game',
-    image: '/assets/images/simon.png',
-    url: 'https://bitlogic-dev.github.io/FCC-Simon/',
-    description: 'Memory game.'
+    type: 'projects',
+    id: 'simon',
+    attributes: {
+      title: 'Simon',
+      category: 'game',
+      image: '/assets/images/simon.png',
+      url: 'https://bitlogic-dev.github.io/FCC-Simon/',
+      description: 'Memory game.'
+    }
   },
   {
-    title: 'Tic Tac Toe',
-    category: 'game',
-    image: '/assets/images/tic-tac-toe.png',
-    url: 'https://bitlogic-dev.github.io/FCC-Tic-Tac-Toe/',
-    description: 'Play against the negamax algorithm.'
+    type: 'projects',
+    id: 'tic-tac-toe',
+    attributes: {
+      title: 'Tic Tac Toe',
+      category: 'game',
+      image: '/assets/images/tic-tac-toe.png',
+      url: 'https://bitlogic-dev.github.io/FCC-Tic-Tac-Toe/',
+      description: 'Play against the negamax algorithm.'
+    }
   }];
 
-  this.get('/projects', function() {
-    return { data: projects }
+  this.get('/projects', function(db, request) {
+    return { data: projects };
   });
 
   let rentals = [{
