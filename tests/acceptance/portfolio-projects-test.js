@@ -4,9 +4,7 @@ import setupMirage from 'ember-cli-mirage/test-support/setup-mirage';
 import {
   click, // pretends to be a user clicking on a specific part of the screen
   currentURL, // returns the URL of the page we are currently on
-  visit, // loads a given URL
-  fillIn,
-  triggerKeyEvent
+  visit // loads a given URL
 } from '@ember/test-helpers';
 
 module('Acceptance | portfolio projects', function(hooks) {
