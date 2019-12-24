@@ -11,16 +11,13 @@
     background: url(../assets/images/bitmoji-coffee-pot-haig.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    border-radius: 5px;
-    height: 200px;
-    width: 200px;
-
-    position: relative;
-    top: -50px;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    margin: 15px;
 }
 
 .code-background {
     background: url(../assets/images/code-background.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
 }
