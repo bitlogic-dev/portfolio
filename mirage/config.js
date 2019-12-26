@@ -28,4 +28,6 @@ export default function() {
   this.get('/projects', function() {
     return { data: projects };
   });
+
+  this.passthrough('/portfolio');
 }
