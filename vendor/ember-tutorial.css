@@ -61,10 +61,11 @@ p {
  */
 
 .container {
-  max-width: 1024px;
+  max-width: 1080px;
   min-height: 100vh;
   background: #f9f9f9;
   margin: 0 auto;
+  padding: 0;
 }
 /**
  * Top Navigation
@@ -177,7 +178,7 @@ p {
 
 .jumbo {
   padding: 25px 50px;
-  margin: -15px;
+  margin: -15px -15px 0 -15px;
   background-color: #E4B026;
   color: #000000;
 }
