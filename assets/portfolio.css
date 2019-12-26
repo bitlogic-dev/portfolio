@@ -1,1 +1,24 @@
-.image-container{margin-right:10px}.centered{padding:15px;text-align:center}.coffeetron{background:url(../assets/images/bitmoji-coffee-pot-haig.jpg) no-repeat;background-size:contain;border-radius:55px;height:100px;width:100px;margin:15px;border:5px solid #000}.code-background{background:url(../assets/images/code-background.jpg);background-size:cover}
+.image-container {
+  margin-right: 10px;
+}
+
+.centered {
+  padding: 15px;
+  text-align: center;
+}
+
+.coffeetron {
+    background: url(../assets/images/bitmoji-coffee-pot-haig.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 55px;
+    height: 100px;
+    width: 100px;
+    margin: 15px;
+    border: 5px solid black;
+}
+
+.code-background {
+    background: url(../assets/images/code-background.jpg);
+    background-size: cover;
+}
