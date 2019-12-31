@@ -1,7 +1,8 @@
-<div>
-  <div class="col-3">
+<div class="row resume">
+  <div class="col-md-3">
+    <div class="code-background"></div>
     <div>
-      <h3>Profile</h3>
+      <h3>TLDR</h3>
       <p>
         Full-stack engineer with a huge creative appetite and passion for gaming
          in all forms seeking to apply past experiences in collaborative world
@@ -14,31 +15,39 @@
     </div>
     <div>
       <h3>Favorite Games</h3>
-      <ol>
+      <ul class="list-unstyled">
         <li>League of Legends</li>
         <li>Overwatch</li>
         <li>Teamfight Tactics</li>
-        <li>Dungeons &amp Dragons</li>
+        <li>Dungeons & Dragons</li>
         <li>Zombiecide Aplocalypse</li>
-      </ol>
+      </ul>
+    </div>
+    <div>
+      <h3>Key Skills</h3>
+      <div>
+        {{#each this.model as |skillUnit|}}
+          <span class="badge badge-info">{{skillUnit.name}}</span>
+        {{/each}}
+      </div>
     </div>
 
   </div>
-  <div class="col-9">
+  <div class="col-md-9">
     <h1>Haig Hagopian</h1>
     <h2>Software Engineer</h2>
     <div>
-      <h3>Education &amp Training</h3>
-      <ul>
+      <h3>Education & Training</h3>
+      <ul class="list-unstyled">
         <li>Amazon Web Services Developer – Associate Certification</li>
         <li>freeCodeCamp - Full Stack Web Development Bootcamp</li>
       </ul>
     </div>
     <div>
       <h3>Programming Experience</h3>
-      <ul>
+      <ul class="list-unstyled">
         <li>
-          <h3>Deluxe Entertainment Services Group | Software Engineer</h3>
+          <h4>Deluxe Entertainment Services Group | Software Engineer</h4>
           <p>
             Worked closely with product managers and senior technical leadership
             to scope, estimate and deliver business value in regular increments
@@ -58,10 +67,16 @@
             communicated with a service layer through RESTful APIs.
           </p>
         </li>
-        <li>freeCodeCamp - Full Stack Web Development Bootcamp</li>
+        <li>
+          <h4>SnapMunk | Web Developer</h4>
+          <p>
+            Designed and maintained custom Wordpress website hosted on the cloud.
+            Refactored php templates and implemented SASS to allow layouts to scale
+            more easily and facilitate future customization.
+          </p>
+        </li>
       </ul>
     </div>
-
   </div>
 </div>
 {{outlet}}
