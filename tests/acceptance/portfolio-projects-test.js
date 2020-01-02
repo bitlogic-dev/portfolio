@@ -12,26 +12,20 @@ module('Acceptance | portfolio projects', function(hooks) {
   setupMirage(hooks);
 
   test('should show projects as the home page', async function(assert) {
-    await visit('/');
+    await visit('/portfolio');
 
     assert.equal(currentURL(), '/projects', 'should redirect automatically');
 
   });
 
   test('should link to about me page', async function(assert) {
-    await visit('/');
+    await visit('/portfolio');
     await click(".menu-about");
     assert.equal(currentURL(), '/about', 'should navigate to about');
   });
 
-  test('should link to my contact page', async function(assert) {
-    await visit('/');
-    await click(".menu-contact");
-    assert.equal(currentURL(), '/contact', 'should navigate to contact');
-  });
-
   test('should list my completed projects', async function(assert) {
-    await visit('/');
+    await visit('/portfolio');
     // querySelectorAll method returns the elements that match the given CSS selector.
     assert.equal(this.element.querySelectorAll('.listing').length, 2, 'should display 2 listings');
   });
