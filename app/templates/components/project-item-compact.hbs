@@ -1,0 +1,12 @@
+<article class="listing project compact">
+  <div class="centered">
+    <a href={{this.project.url}} target="#">
+      <img src={{this.project.image}} alt="">
+    </a>
+    <div class="skills">
+      {{#each this.skills as |skillName|}}
+        <span class="badge badge-info">{{skillName}}</span>
+      {{/each}}
+    </div>
+  </div>
+</article>

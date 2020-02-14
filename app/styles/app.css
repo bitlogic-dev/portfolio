@@ -46,3 +46,35 @@
 .resume h3 {
   color: #51B9DB;
 }
+
+.resume .block {
+  margin-bottom: 15px;
+}
+
+div.results {
+  display: flex;
+}
+
+article.compact {
+  padding: 0;
+  margin: 0;
+}
+
+.compact h3 {
+  color: #000;
+}
+
+.compact .centered {
+  max-width: 175px;
+  padding: 0px 15px 0px 0px;
+}
+
+.compact .skills {
+  max-width: 150px;
+  text-align: left;
+}
+
+.compact img {
+  height: 150px;
+  float: none;
+}

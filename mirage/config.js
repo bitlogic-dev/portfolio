@@ -10,7 +10,8 @@ export default function() {
       category: 'game',
       image: '/portfolio/assets/images/Simon.png',
       url: 'https://bitlogic-dev.github.io/FCC-Simon/',
-      description: 'Memory game.'
+      description: 'Memory game.',
+      skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery']
     }
   },
   {
@@ -21,7 +22,8 @@ export default function() {
       category: 'game',
       image: '/portfolio/assets/images/Tic-Tac-Toe.png',
       url: 'https://bitlogic-dev.github.io/FCC-Tic-Tac-Toe/',
-      description: 'Play against the negamax algorithm.'
+      description: 'Play against the negamax algorithm.',
+      skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery']
     }
   }];
 

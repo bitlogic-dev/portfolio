@@ -8,5 +8,6 @@ export default Model.extend({
   category: DS.attr(),
   image: DS.attr(),
   url: DS.attr(),
-  description: DS.attr()
+  description: DS.attr(),
+  skills: DS.attr()
 });

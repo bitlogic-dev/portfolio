@@ -9,6 +9,7 @@
 </div>
 <div class="row resume">
   <div class="col-md-3">
+    
     <div>
       <h3>TLDR</h3>
       <p>
@@ -17,6 +18,7 @@
          building, power balancing and playtesting to PC game development.
       </p>
     </div>
+
     <div>
       <h3>Contact Info</h3>
       <a href="mailto:haighagopian@gmail.com">
@@ -29,6 +31,7 @@
         <FaIcon @icon="github-square" @prefix="fab" @size="2x" />
       </a>
     </div>
+
     <div>
       <h3>Favorite Games</h3>
       <ul class="list-unstyled">
@@ -39,24 +42,30 @@
         <li>Zombiecide Aplocalypse</li>
       </ul>
     </div>
-    <div>
+
+  </div>
+
+  <div class="col-md-9">
+
+    <div class="resume block">
       <h3>Key Skills</h3>
       <div>
-        {{#each this.model as |skillUnit|}}
+        {{#each @model.skills as |skillUnit|}}
           <span class="badge badge-info">{{skillUnit.name}}</span>
         {{/each}}
       </div>
     </div>
-  </div>
-  <div class="col-md-9">
-    <div>
-      <h3>Education & Training</h3>
-      <ul class="list-unstyled">
-        <li>Amazon Web Services Developer – Associate Certification</li>
-        <li>freeCodeCamp - Full Stack Web Development Bootcamp</li>
-      </ul>
+
+    <div class="resume block">
+      <h3>Projects</h3>
+      <div class="results">
+        {{#each @model.projects as |projectUnit|}}
+          <ProjectItemCompact @project={{projectUnit}} @skills={{projectUnit.skills}}></ProjectItemCompact>
+        {{/each}}
+      </div>
     </div>
-    <div>
+
+    <div class="resume block">
       <h3>Programming Experience</h3>
       <ul class="list-unstyled">
         <li>
@@ -88,6 +97,14 @@
             more easily and facilitate future customization.
           </p>
         </li>
+      </ul>
+    </div>
+
+    <div class="resume block">
+      <h3>Education & Training</h3>
+      <ul class="list-unstyled">
+        <li>Amazon Web Services Developer – Associate Certification</li>
+        <li>freeCodeCamp - Full Stack Web Development Bootcamp</li>
       </ul>
     </div>
   </div>
