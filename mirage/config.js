@@ -25,6 +25,30 @@ export default function() {
       description: 'Play against the negamax algorithm.',
       skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery']
     }
+  },
+  {
+    type: 'projects',
+    id: 'ember-portfolio',
+    attributes: {
+      title: 'Portfolio',
+      category: 'app',
+      image: '/portfolio/assets/images/ember-portfolio.png',
+      url: '',
+      description: 'A web application built with EmberJS.',
+      skills: ['Ember.js', 'HTML5', 'CSS3', 'GitHub']
+    }
+  },
+  {
+    type: 'projects',
+    id: 'absolute-zero',
+    attributes: {
+      title: 'Absolute Zero',
+      category: 'game',
+      image: '/portfolio/assets/images/absolute-zero.png',
+      url: '',
+      description: '2D platformer game built with Unity.',
+      skills: ['C#', 'OO Design', 'Unity']
+    }
   }];
 
   let skills = [{
