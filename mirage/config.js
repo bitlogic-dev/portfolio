@@ -2,106 +2,6 @@ export default function() {
   // the namespace property lets Mirage know to only provide data for url request that start with api
   this.namespace = '/api';
 
-  let experience = [
-    {
-      type: 'experience',
-      id: 'studio-portal',
-      attributes: {
-        title: 'Studio Portal',
-        category: 'web',
-        image: '/portfolio/assets/images/StudioPortal.png',
-        description:
-          'This system provides confirmation of KDM (key) creation and provides you the ability to locate a KDM and send it to a list of specific email addresses.',
-        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', 'ASP.NET', 'T-SQL']
-      }
-    },
-    {
-      type: 'experience',
-      id: 'reeltime',
-      attributes: {
-        title: 'Reeltime',
-        category: 'web',
-        image: '/portfolio/assets/images/Reeltime.png',
-        description:
-          'This system provides global online key and content ordering for Deluxe Technicolor Digital Cinema account teams responsible for domestic and international releases.',
-        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', '.NET', 'T-SQL']
-      }
-    },
-    {
-      type: 'experience',
-      id: 'kraken',
-      attributes: {
-        title: 'Kraken',
-        category: 'web',
-        image: '/portfolio/assets/images/Kraken.png',
-        description:
-          'This system provides workflow management tools and infrastructure used by Deluxe Digital Cinema Mastering and Distribution teams.',
-        skills: ['Javascript', 'HTML5', 'CSS3', 'Jade/Pug', 'Typescript', 'AngularJS', 'C#', '.NET', 'T-SQL']
-      }
-    },
-    {
-      type: 'experience',
-      id: 'kraken-desktop',
-      attributes: {
-        title: 'Kraken Distribution Client',
-        category: 'desktop',
-        image: '/portfolio/assets/images/KrakenDistroClient.png',
-        description:
-          'This is a desktop application that provides packaging and labeling tools that integrate with inventory tracking and management within the Kraken web application.',
-        skills: ['C#', '.NET', 'T-SQL']
-      }
-    },
-  ];
-
-  let projects = [{
-    type: 'projects',
-    id: 'simon',
-    attributes: {
-      title: 'Simon',
-      category: 'game',
-      image: '/portfolio/assets/images/Simon.png',
-      url: 'https://bitlogic-dev.github.io/FCC-Simon/',
-      description: 'Memory game.',
-      skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery']
-    }
-  },
-  {
-    type: 'projects',
-    id: 'tic-tac-toe',
-    attributes: {
-      title: 'Tic Tac Toe',
-      category: 'game',
-      image: '/portfolio/assets/images/Tic-Tac-Toe.png',
-      url: 'https://bitlogic-dev.github.io/FCC-Tic-Tac-Toe/',
-      description: 'Play against the negamax algorithm.',
-      skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery']
-    }
-  },
-  {
-    type: 'projects',
-    id: 'ember-portfolio',
-    attributes: {
-      title: 'Portfolio',
-      category: 'app',
-      image: '/portfolio/assets/images/ember-portfolio.png',
-      url: '',
-      description: 'A web application built with EmberJS.',
-      skills: ['Ember.js', 'HTML5', 'CSS3', 'GitHub']
-    }
-  },
-  {
-    type: 'projects',
-    id: 'absolute-zero',
-    attributes: {
-      title: 'Absolute Zero',
-      category: 'game',
-      image: '/portfolio/assets/images/absolute-zero.png',
-      url: '',
-      description: '2D platformer game built with Unity.',
-      skills: ['C#', 'OO Design', 'Unity']
-    }
-  }];
-
   let skills = [{
     type: 'skills',
     id: '1',
@@ -277,15 +177,125 @@ export default function() {
       name: 'Unity',
       tags: ['game', 'engine', 'framework']
     }
-  }];
+    }];
 
-  this.get('/projects', function() {
-    return { data: projects };
-  });
-
-  this.get('/skills', function() {
+  this.get('/skills', function () {
     return { data: skills };
   });
+
+  this.namespace = '/api/projects';
+
+
+  let games = [
+    {
+      type: 'project',
+      id: 'games-01',
+      attributes: {
+        title: 'Simon',
+        category: 'game',
+        image: '/portfolio/assets/images/Simon.png',
+        url: 'https://bitlogic-dev.github.io/FCC-Simon/',
+        description: 'Memory game.',
+        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery']
+      }
+    },
+    {
+      type: 'project',
+      id: 'games-02',
+      attributes: {
+        title: 'Tic Tac Toe',
+        category: 'game',
+        image: '/portfolio/assets/images/Tic-Tac-Toe.png',
+        url: 'https://bitlogic-dev.github.io/FCC-Tic-Tac-Toe/',
+        description: 'Play against the negamax algorithm.',
+        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery']
+      }
+    },
+    {
+      type: 'project',
+      id: 'games-03',
+      attributes: {
+        title: 'Portfolio',
+        category: 'app',
+        image: '/portfolio/assets/images/ember-portfolio.png',
+        url: '',
+        description: 'A web application built with EmberJS.',
+        skills: ['Ember.js', 'HTML5', 'CSS3', 'GitHub']
+      }
+    },
+    {
+      type: 'project',
+      id: 'games-04',
+      attributes: {
+        title: 'Absolute Zero',
+        category: 'game',
+        image: '/portfolio/assets/images/absolute-zero.png',
+        url: '',
+        description: '2D platformer game built with Unity.',
+        skills: ['C#', 'OO Design', 'Unity']
+      }
+    }
+  ];
+
+  let work = [
+    {
+      type: 'project',
+      id: 'deluxe-01',
+      attributes: {
+        title: 'Studio Portal',
+        category: 'web',
+        image: '/portfolio/assets/images/StudioPortal.png',
+        description:
+          'This system provides confirmation of KDM (key) creation and provides you the ability to locate a KDM and send it to a list of specific email addresses.',
+        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', 'ASP.NET', 'T-SQL']
+      }
+    },
+    {
+      type: 'project',
+      id: 'deluxe-02',
+      attributes: {
+        title: 'Reeltime',
+        category: 'web',
+        image: '/portfolio/assets/images/Reeltime.png',
+        description:
+          'This system provides global online key and content ordering for Deluxe Technicolor Digital Cinema account teams responsible for domestic and international releases.',
+        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', '.NET', 'T-SQL']
+      }
+    },
+    {
+      type: 'project',
+      id: 'deluxe-03',
+      attributes: {
+        title: 'Kraken',
+        category: 'web',
+        image: '/portfolio/assets/images/Kraken.png',
+        description:
+          'This system provides workflow management tools and infrastructure used by Deluxe Digital Cinema Mastering and Distribution teams.',
+        skills: ['Javascript', 'HTML5', 'CSS3', 'Jade/Pug', 'Typescript', 'AngularJS', 'C#', '.NET', 'T-SQL']
+      }
+    },
+    {
+      type: 'project',
+      id: 'deluxe-04',
+      attributes: {
+        title: 'Kraken Distribution Client',
+        category: 'desktop',
+        image: '/portfolio/assets/images/KrakenDistroClient.png',
+        description:
+          'This is a desktop application that provides packaging and labeling tools that integrate with inventory tracking and management within the Kraken web application.',
+        skills: ['C#', '.NET', 'T-SQL']
+      }
+    }];
+
+  this.get('/projects/work',
+    function() {
+      return { data: work };
+    });
+
+  this.get('/projects/games', function() {
+    return { data: games };
+  });
+
 
   this.passthrough('/portfolio');
 }
