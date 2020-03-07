@@ -282,6 +282,19 @@ export default function() {
           'This is a desktop application that provides packaging and labeling tools that integrate with inventory tracking and management within the Kraken web application.',
         skills: ['C#', '.NET', 'T-SQL']
       }
+    },
+    {
+      type: 'experience',
+      id: 'deluxe-05',
+      attributes: {
+        title: 'One DCP Manifest',
+        category: 'cloud',
+        image: '/portfolio/assets/images/teaching.png',
+        url: '',
+        description:
+          'This is a microservice that dynamically builds DCP Manifests for Assetmap xml files that are uploaded into AWS s3 buckets.',
+        skills: ['C#', '.NET', 'T-SQL', 'AWS']
+      }
     }];
 
 

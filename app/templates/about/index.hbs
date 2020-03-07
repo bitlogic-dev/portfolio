@@ -49,14 +49,14 @@
 
   <div class="col-md-9">
 
-    <div class="resume block">
+    <!--<div class="resume block">
       <h3>Key Skills</h3>
       <div>
         {{#each @model.skills as |skillUnit|}}
           <span class="badge badge-info">{{skillUnit.name}}</span>
         {{/each}}
       </div>
-    </div>
+    </div>-->
 
     <div class="resume block">
       <h3>Projects</h3>
@@ -72,29 +72,18 @@
       <ul class="list-unstyled">
         <li>
           <h4>Deluxe Entertainment Services Group | Software Engineer</h4>
-          <div class="results">
-            {{#each @model.experiences as |experience|}}
+          <p>
+            Developed multiple full stack web, desktop and microservice applications for digital cinema mastering and distribution around the world.
+          </p>
+
+          {{#each @model.experiences as |experience|}}
+            <div class="results">
               <ProjectItemCompact @project={{experience}} @skills={{experience.skills}}></ProjectItemCompact>
-            {{/each}}
-          </div>
-          <p>
-            Worked closely with product managers and senior technical leadership
-            to scope, estimate and deliver business value in regular increments
-            to multiple projects responsible for the annual distribution of over
-            15 million digital cinema packages and keys to more than 32,000
-            theaters around the world.
-          </p>
-          <p>
-            Programming responsibilities span the full stack for web and desktop
-            client front ends connected to a .NET service layer written in C#
-            that is supported by a SQL Server back end.
-          </p>
-          <p>
-            Web clients involved working with a mix of older aspx web form pages
-            with C# code behinds and more modern HTML5 pages rendered from Jade/Pug
-            templates bound to an underlying AngularJS application which
-            communicated with a service layer through RESTful APIs.
-          </p>
+              <span>
+                {{experience.description}}
+              </span>
+            </div>
+          {{/each}}
         </li>
         <li>
           <h4>SnapMunk | Web Developer</h4>
