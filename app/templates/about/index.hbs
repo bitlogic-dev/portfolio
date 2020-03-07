@@ -72,6 +72,11 @@
       <ul class="list-unstyled">
         <li>
           <h4>Deluxe Entertainment Services Group | Software Engineer</h4>
+          <div class="results">
+            {{#each @model.experiences as |experience|}}
+              <ProjectItemCompact @project={{experience}} @skills={{experience.skills}}></ProjectItemCompact>
+            {{/each}}
+          </div>
           <p>
             Worked closely with product managers and senior technical leadership
             to scope, estimate and deliver business value in regular increments

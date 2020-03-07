@@ -9,7 +9,8 @@ export default class AboutRoute extends Route{
     // object that contains the results of each request.
     return RSVP.hash({
       skills: this.store.findAll('skill'),
-      projects: this.store.findAll('project')
+      projects: this.store.findAll('project'),
+      experiences: this.store.findAll('experience')
     });
   }
 }

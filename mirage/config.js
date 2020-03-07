@@ -2,8 +2,9 @@ export default function() {
   // the namespace property lets Mirage know to only provide data for url request that start with api
   this.namespace = '/api';
 
-  let skills = [{
-    type: 'skills',
+  let skills = [
+  {
+    type: 'skill',
     id: '1',
     attributes: {
       name: 'Javascript',
@@ -11,7 +12,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '2',
     attributes: {
       name: 'C#',
@@ -19,7 +20,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '3',
     attributes: {
       name: 'HTML5',
@@ -27,7 +28,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '4',
     attributes: {
       name: 'CSS3',
@@ -35,7 +36,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '5',
     attributes: {
       name: 'Jade/Pug',
@@ -43,7 +44,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '6',
     attributes: {
       name: 'AngularJS',
@@ -51,7 +52,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '7',
     attributes: {
       name: 'jQuery',
@@ -59,7 +60,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '8',
     attributes: {
       name: 'Ninject',
@@ -67,7 +68,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '9',
     attributes: {
       name: 'SASS',
@@ -75,7 +76,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '10',
     attributes: {
       name: 'Nunit',
@@ -83,7 +84,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '11',
     attributes: {
       name: 'RabbitMQ',
@@ -91,7 +92,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '12',
     attributes: {
       name: 'Git',
@@ -99,7 +100,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '13',
     attributes: {
       name: 'GitHub',
@@ -107,7 +108,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '14',
     attributes: {
       name: 'Typescript',
@@ -115,7 +116,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '15',
     attributes: {
       name: 'ASP .NET',
@@ -123,7 +124,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '16',
     attributes: {
       name: 'JWT Auth',
@@ -131,7 +132,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '17',
     attributes: {
       name: 'OO Design',
@@ -139,7 +140,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '18',
     attributes: {
       name: 'ElasticSearch',
@@ -147,7 +148,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '19',
     attributes: {
       name: 'Kafka',
@@ -155,7 +156,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '20',
     attributes: {
       name: 'Bamboo',
@@ -163,7 +164,7 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '21',
     attributes: {
       name: 'Ember.js',
@@ -171,21 +172,14 @@ export default function() {
     }
   },
   {
-    type: 'skills',
+    type: 'skill',
     id: '22',
     attributes: {
       name: 'Unity',
       tags: ['game', 'engine', 'framework']
     }
     }];
-
-  this.get('/skills', function () {
-    return { data: skills };
-  });
-
-  this.namespace = '/api/projects';
-
-
+  
   let games = [
     {
       type: 'project',
@@ -234,65 +228,73 @@ export default function() {
         description: '2D platformer game built with Unity.',
         skills: ['C#', 'OO Design', 'Unity']
       }
-    }
-  ];
+    }];
 
   let work = [
     {
-      type: 'project',
+      type: 'experience',
       id: 'deluxe-01',
       attributes: {
         title: 'Studio Portal',
         category: 'web',
-        image: '/portfolio/assets/images/StudioPortal.png',
+        image: '/portfolio/assets/images/teaching.png',
+        url: '',
         description:
           'This system provides confirmation of KDM (key) creation and provides you the ability to locate a KDM and send it to a list of specific email addresses.',
         skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', 'ASP.NET', 'T-SQL']
       }
     },
     {
-      type: 'project',
+      type: 'experience',
       id: 'deluxe-02',
       attributes: {
         title: 'Reeltime',
         category: 'web',
-        image: '/portfolio/assets/images/Reeltime.png',
+        image: '/portfolio/assets/images/teaching.png',
+        url: '',
         description:
           'This system provides global online key and content ordering for Deluxe Technicolor Digital Cinema account teams responsible for domestic and international releases.',
         skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', '.NET', 'T-SQL']
       }
     },
     {
-      type: 'project',
+      type: 'experience',
       id: 'deluxe-03',
       attributes: {
         title: 'Kraken',
         category: 'web',
-        image: '/portfolio/assets/images/Kraken.png',
+        image: '/portfolio/assets/images/teaching.png',
+        url: '',
         description:
           'This system provides workflow management tools and infrastructure used by Deluxe Digital Cinema Mastering and Distribution teams.',
         skills: ['Javascript', 'HTML5', 'CSS3', 'Jade/Pug', 'Typescript', 'AngularJS', 'C#', '.NET', 'T-SQL']
       }
     },
     {
-      type: 'project',
+      type: 'experience',
       id: 'deluxe-04',
       attributes: {
         title: 'Kraken Distribution Client',
         category: 'desktop',
-        image: '/portfolio/assets/images/KrakenDistroClient.png',
+        image: '/portfolio/assets/images/teaching.png',
+        url: '',
         description:
           'This is a desktop application that provides packaging and labeling tools that integrate with inventory tracking and management within the Kraken web application.',
         skills: ['C#', '.NET', 'T-SQL']
       }
     }];
 
-  this.get('/projects/work',
-    function() {
-      return { data: work };
-    });
 
-  this.get('/projects/games', function() {
+  this.get('/skills', function () {
+    return { data: skills };
+  });
+
+
+  this.get('/experiences', function() {
+      return { data: work };
+  });
+
+  this.get('/projects', function() {
     return { data: games };
   });
 
