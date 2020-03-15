@@ -26,3 +26,6 @@
 
 # vs settings
 .vs/*
+.vs/portfolio/v16/.suo
+*.sqlite
+.vs/VSWorkspaceState.json
