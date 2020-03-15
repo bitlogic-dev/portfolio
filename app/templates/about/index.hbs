@@ -78,10 +78,7 @@
 
           {{#each @model.experiences as |experience|}}
             <div class="results">
-              <ProjectItemCompact @project={{experience}} @skills={{experience.skills}}></ProjectItemCompact>
-              <span>
-                {{experience.description}}
-              </span>
+              <WorkExperience @project={{experience}} @skills={{experience.skills}}></WorkExperience>
             </div>
           {{/each}}
         </li>
