@@ -179,7 +179,7 @@ export default function() {
       tags: ['game', 'engine', 'framework']
     }
     }];
-  
+
   let games = [
     {
       type: 'project',
@@ -241,7 +241,7 @@ export default function() {
         url: '',
         description:
           'This system provides confirmation of KDM (key) creation and provides you the ability to locate a KDM and send it to a list of specific email addresses.',
-        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', 'ASP.NET', 'T-SQL']
+        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', 'OO Design', 'ASP.NET', 'T-SQL']
       }
     },
     {
@@ -254,7 +254,7 @@ export default function() {
         url: '',
         description:
           'This system provides global online key and content ordering for Deluxe Technicolor Digital Cinema account teams responsible for domestic and international releases.',
-        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', '.NET', 'T-SQL']
+        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', 'OO Design', '.NET', 'T-SQL']
       }
     },
     {
@@ -267,7 +267,7 @@ export default function() {
         url: '',
         description:
           'This system provides workflow management tools and infrastructure used by Deluxe Digital Cinema Mastering and Distribution teams.',
-        skills: ['Javascript', 'HTML5', 'CSS3', 'Jade/Pug', 'Typescript', 'AngularJS', 'C#', '.NET', 'T-SQL']
+        skills: ['Javascript', 'HTML5', 'CSS3', 'Jade/Pug', 'Typescript', 'AngularJS', 'C#', 'OO Design', '.NET', 'T-SQL']
       }
     },
     {
@@ -280,7 +280,7 @@ export default function() {
         url: '',
         description:
           'This is a desktop application that provides packaging and labeling tools that integrate with inventory tracking and management within the Kraken web application.',
-        skills: ['C#', '.NET', 'T-SQL']
+        skills: ['C#', 'OO Design', '.NET', 'T-SQL']
       }
     },
     {
@@ -293,7 +293,7 @@ export default function() {
         url: '',
         description:
           'This is a microservice that dynamically builds DCP Manifests for Assetmap xml files that are uploaded into AWS s3 buckets.',
-        skills: ['C#', '.NET', 'T-SQL', 'AWS']
+        skills: ['C#', 'OO Design', '.NET', 'T-SQL', 'AWS']
       }
     }];
 

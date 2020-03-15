@@ -78,3 +78,19 @@ article.compact {
   height: 150px;
   float: none;
 }
+
+article.work-experience {
+  display: block;
+  min-height: 100px;
+  margin-bottom: 15px;
+}
+
+.work-experience img {
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+.work-experience .skills {
+  max-width: none;
+}
