@@ -237,11 +237,12 @@ export default function() {
       attributes: {
         title: 'Studio Portal',
         category: 'web',
-        image: '/portfolio/assets/images/teaching.png',
+        image: '/portfolio/assets/images/deluxe-logo.png',
         url: '',
         description:
-          'This system provides confirmation of KDM (key) creation and provides you the ability to locate a KDM and send it to a list of specific email addresses.',
-        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', 'OO Design', 'ASP.NET', 'T-SQL']
+          'Web application providing confirmation of KDM (key) creation and sending them it to a list of specific email addresses.',
+        achievements: ['Enhanced and maintained existing pages built with Telerik components.', 'Converted key creation rules page to AngularJS and built new rules component for Netflix.'],
+        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', 'OO Design', 'ASP.NET', 'T-SQL', 'Telerik']
       }
     },
     {
@@ -253,8 +254,9 @@ export default function() {
         image: '/portfolio/assets/images/teaching.png',
         url: '',
         description:
-          'This system provides global online key and content ordering for Deluxe Technicolor Digital Cinema account teams responsible for domestic and international releases.',
-        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', 'OO Design', '.NET', 'T-SQL']
+          'Web application providing global online key and content ordering for Deluxe Technicolor Digital Cinema account teams managing domestic and international releases.',
+        achievements: ['Enhanced and maintained existing pages built with Telerik and AngularJS components.','Built a framework that spawned modular widgets that could be loaded with any of the utilities used sitewide, like search forms.'],
+        skills: ['Javascript', 'HTML5', 'CSS3', 'jQuery', 'AngularJS', 'C#', 'OO Design', '.NET', 'T-SQL', 'Telerik']
       }
     },
     {
@@ -266,33 +268,22 @@ export default function() {
         image: '/portfolio/assets/images/teaching.png',
         url: '',
         description:
-          'This system provides workflow management tools and infrastructure used by Deluxe Digital Cinema Mastering and Distribution teams.',
-        skills: ['Javascript', 'HTML5', 'CSS3', 'Jade/Pug', 'Typescript', 'AngularJS', 'C#', 'OO Design', '.NET', 'T-SQL']
+          'Web application providing workflow management tools and infrastructure used by Deluxe Digital Cinema Mastering and Distribution teams.',
+          achievements: ['Built and enhanced multiple integrations between Kraken and other Deluxe microservices.','Enhanced and maintained existing features, as well as the companion desktop application providing packaging and labeling tools that integrate with inventory tracking and management set up on Kraken web application.'],
+          skills: ['Javascript', 'HTML5', 'CSS3', 'Jade/Pug', 'Typescript', 'AngularJS', 'C#', 'OO Design', '.NET', 'T-SQL']
       }
     },
     {
       type: 'experience',
       id: 'deluxe-04',
       attributes: {
-        title: 'Kraken Distribution Client',
-        category: 'desktop',
-        image: '/portfolio/assets/images/teaching.png',
-        url: '',
-        description:
-          'This is a desktop application that provides packaging and labeling tools that integrate with inventory tracking and management within the Kraken web application.',
-        skills: ['C#', 'OO Design', '.NET', 'T-SQL']
-      }
-    },
-    {
-      type: 'experience',
-      id: 'deluxe-05',
-      attributes: {
         title: 'One DCP Manifest',
         category: 'cloud',
         image: '/portfolio/assets/images/teaching.png',
         url: '',
         description:
-          'This is a microservice that dynamically builds DCP Manifests for Assetmap xml files that are uploaded into AWS s3 buckets.',
+          'Cloud microservice that dynamically builds DCP Manifests for Assetmap xml files that are uploaded into AWS s3 buckets.',
+        achievements: ['Built microservice from ground up as a new project.', 'Extended Kraken service API to make metadata required as part of the manifest accessible.'],
         skills: ['C#', 'OO Design', '.NET', 'T-SQL', 'AWS']
       }
     }];

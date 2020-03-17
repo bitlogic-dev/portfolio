@@ -1,17 +1,25 @@
 <article class="listing work-experience compact">
-
-    <a href={{this.project.url}} target="#">
-      <img src={{this.project.image}} alt="">
-    </a>
-    <div>
-      <div>
-        <span>{{this.project.description}}</span>
-      </div>
-      <div class="skills">
-        {{#each this.skills as |skillName|}}
-          <span class="badge badge-info">{{skillName}}</span>
+  <ul>
+    <li>
+      <span>
+        <strong>{{this.project.title}}</strong>
+      </span>
+      |
+      <span>
+        <em>{{this.project.description}}</em>
+      </span>
+    </li>
+    <li>
+      <ul class="list-group">
+        {{#each this.project.achievements as |achievement|}}
+          <li class="list-group-item">{{achievement}}</li>
         {{/each}}
-      </div>
-    </div>
-
+        <li class="list-group-item">
+          {{#each this.skills as |skillName|}}
+            <span class="badge badge-info">{{skillName}}</span>
+          {{/each}}
+        </li>
+      </ul>
+    </li>
+  </ul>
 </article>

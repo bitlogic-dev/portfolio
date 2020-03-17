@@ -9,7 +9,7 @@
 </div>
 <div class="row resume">
   <div class="col-md-3">
-    
+
     <div>
       <h3>TLDR</h3>
       <p>
@@ -38,7 +38,7 @@
         <li>League of Legends</li>
         <li>Legends of Runeterra</li>
         <li>Teamfight Tactics</li>
-        <li>Overwatch</li>       
+        <li>Overwatch</li>
         <li>Hearthstone</li>
         <li>Dungeons & Dragons</li>
         <li>Zombiecide Apocalypse</li>
@@ -71,24 +71,58 @@
       <h3>Programming Experience</h3>
       <ul class="list-unstyled">
         <li>
-          <h4>Deluxe Entertainment Services Group | Software Engineer</h4>
-          <p>
-            Developed multiple full stack web, desktop and microservice applications for digital cinema mastering and distribution around the world.
-          </p>
-
-          {{#each @model.experiences as |experience|}}
-            <div class="results">
-              <WorkExperience @project={{experience}} @skills={{experience.skills}}></WorkExperience>
-            </div>
-          {{/each}}
+          <div>
+            <div class="deluxe-logo pull-left"></div>
+            <h4>Deluxe Entertainment | Software Engineer</h4>
+            <small class="text-muted">
+              Developed multiple full stack web, desktop and microservice applications for digital cinema mastering and distribution around the world.
+            </small>
+          </div>
+          <div class="work-experience">
+            {{#each @model.experiences as |experience|}}
+              <WorkExperience class="results" @project={{experience}} @skills={{experience.skills}}></WorkExperience>
+            {{/each}}
+          </div>
         </li>
         <li>
-          <h4>SnapMunk | Web Developer</h4>
-          <p>
-            Designed and maintained custom Wordpress website hosted on the cloud.
-            Refactored php templates and implemented SASS to allow layouts to scale
-            more easily and facilitate future customization.
-          </p>
+          <div style="min-height:75px;">
+            <div class="snapmunk-logo pull-left"></div>
+            <h4>SnapMunk | Web Developer</h4>
+            <small class="text-muted">
+              Techonology news and current events publication with millions of hits per month in web traffic.
+            </small>
+          </div>
+
+          <div class="work-experience">
+            <article class="listing work-experience compact results">
+              <ul>
+                <li>
+                  <span>
+                    <strong>Snapmunk.com</strong>
+                  </span>
+                  |
+                  <span>
+                    <em>Online publication for technology news and editorial content.</em>
+                  </span>
+                </li>
+                <li>
+                  <ul class="list-group">
+                      <li class="list-group-item">Designed and maintained custom Wordpress website hosted on the cloud.
+                      Refactored php templates and implemented SASS to allow layouts to scale
+                      more easily and facilitate future customization.</li>
+                    <li class="list-group-item">
+                      <span class="badge badge-info">PHP</span>
+                      <span class="badge badge-info">HTML5</span>
+                      <span class="badge badge-info">CSS3</span>
+                      <span class="badge badge-info">Javascript</span>
+                      <span class="badge badge-info">WordPress</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </article>
+          </div>
+
         </li>
       </ul>
     </div>

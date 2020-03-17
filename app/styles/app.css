@@ -30,6 +30,26 @@
     border: 5px solid #51B9DB;
 }
 
+.deluxe-logo {
+    background: url(../assets/images/deluxe-logo.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    margin: 10px 10px 10px 0px;
+}
+
+.snapmunk-logo {
+    background: url(../assets/images/snapmunk-logo.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    margin: 10px 10px 10px 0px;
+}
+
 .project img {
   border: 3px solid black;
 }
@@ -51,7 +71,7 @@
   margin-bottom: 15px;
 }
 
-div.results {
+article.results, div.results {
   display: flex;
 }
 
@@ -85,6 +105,10 @@ article.work-experience {
   margin-bottom: 15px;
 }
 
+div.work-experience {
+  margin-left: 15px;
+  margin-top: 10px;
+}
 .work-experience img {
   height: 100px;
   float: left;
@@ -93,4 +117,12 @@ article.work-experience {
 
 .work-experience .skills {
   max-width: none;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
 }

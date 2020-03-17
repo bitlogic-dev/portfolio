@@ -9,5 +9,6 @@ export default Model.extend({
   image: DS.attr(),
   url: DS.attr(),
   description: DS.attr(),
+  achievements: DS.attr(),
   skills: DS.attr()
 });
