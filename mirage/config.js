@@ -178,7 +178,31 @@ export default function() {
       name: 'Unity',
       tags: ['game', 'engine', 'framework']
     }
-    }];
+  },
+  {
+    type: 'skill',
+    id: '23',
+    attributes: {
+      name: 'PostgreSQL',
+      tags: ['database', 'sql']
+    }
+  },
+  {
+    type: 'skill',
+    id: '24',
+    attributes: {
+      name: 'MongoDB',
+      tags: ['database', 'nosql']
+    }
+  },
+  {
+    type: 'skill',
+    id: '24',
+    attributes: {
+      name: 'T-SQL',
+      tags: ['database', 'sql']
+    }
+  }];
 
   let games = [
     {
@@ -221,12 +245,12 @@ export default function() {
       type: 'project',
       id: 'games-04',
       attributes: {
-        title: 'Absolute Zero',
-        category: 'game',
-        image: '/portfolio/assets/images/absolute-zero.png',
-        url: '',
-        description: '2D platformer game built with Unity.',
-        skills: ['C#', 'OO Design', 'Unity']
+        title: 'RPG Card Builder',
+        category: 'app',
+        image: '/portfolio/assets/images/rpg-cards.png',
+        url: 'https://rpg-cards.onrender.com/index.html',
+        description: 'A utility to create custom printable RPG cards',
+        skills: ['Javascript', 'HTML5', 'CSS3']
       }
     }];
 
@@ -276,6 +300,34 @@ export default function() {
     {
       type: 'experience',
       id: 'deluxe-04',
+      attributes: {
+        title: 'One DCP Manifest',
+        category: 'cloud',
+        image: '/portfolio/assets/images/teaching.png',
+        url: '',
+        description:
+          'Cloud microservice that dynamically builds DCP Manifests for Assetmap xml files that are uploaded into AWS s3 buckets.',
+        achievements: ['Built microservice from ground up as a new project.', 'Extended Kraken service API to make metadata required as part of the manifest accessible.'],
+        skills: ['C#', 'OO Design', '.NET', 'T-SQL', 'AWS']
+      }
+    },
+    {
+      type: 'experience',
+      id: 'deluxe-05',
+      attributes: {
+        title: 'Atlas',
+        category: 'cloud',
+        image: '/portfolio/assets/images/teaching.png',
+        url: '',
+        description:
+          'Cloud microservice that manages cinematic and episodic titles and versions.',
+        achievements: ['Implemented feature enhancements and maintained legacy code.'],
+        skills: ['C#', 'OO Design', '.NET', 'PostgreSQL', 'AWS']
+      }
+    },
+    {
+      type: 'experience',
+      id: 'deluxe-06',
       attributes: {
         title: 'One DCP Manifest',
         category: 'cloud',
